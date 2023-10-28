@@ -1,0 +1,43 @@
+
+.inner{
+    width: 1152px;
+    margin: 0 auto;
+}
+.blind{
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+.headline{font-size: 24px;font-weight: 700;}
+
+
+.sc-board .link-more::before,
+.search-area .btn-search::before,
+header .group-top .logo::before{
+    background-image: url(../images/sp-bg.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+}
+
+.group-tab .citizen i::before,
+.group-tab .news i::before{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/ic.png) no-repeat;  
+}
+
+
+.sc-info .info-item a::before{
+    content: '';
+    width: 85px;
+    height: 85px;
+    background-image: url(../images/sp-bg5.png);
+    background-repeat: no-repeat;
+    background-size: 680px;
+}
+ 

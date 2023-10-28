@@ -1,0 +1,47 @@
+/*
+   ttf [트루타입] [old지원]
+   otf [오픈트루타입] [old지원]
+   eot [익스지원]
+   woff [웹오픈폰트포맷] [모던브라우저]
+   woff2 [웹오픈폰트포맷] 20%압축 [최신]
+
+   woff2
+   woff
+   ttf
+   otf
+
+*/
+
+@font-face {
+    font-family: 'Nanum Gothic';
+    src: local('Nanum Gothic'),
+         url('/fonts/awesome.woff2') format('woff2'),
+         url('/fonts/awesome.woff') format('woff'),
+         url('/fonts/awesome.ttf') format('truetype'),
+         url('/fonts/awesome.eot') format('embedded-opentype');
+    font-weight: normal;
+  }
+
+
+ 
+@font-face {
+    font-family: 'Nanum Gothic';
+    src: url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+         url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: 400
+}
+@font-face {
+    font-family: 'Nanum Gothic';
+    src: url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: 700
+}
+@font-face {
+    font-family: 'Nanum Gothic';
+    src:    url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-ExtraBold.woff2') format('woff2'), /* Super Modern Browsers */
+            url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-ExtraBold.woff') format('woff'), /* Pretty Modern Browsers */
+            url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-ExtraBold.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: 800
+}
