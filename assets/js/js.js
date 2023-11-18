@@ -1,9 +1,18 @@
-//상단 셀렉트 박스
-$('#langBtn').click(function(){
-    url=$('#langList').val();
-    window.open(url);
-})
+// //상단 셀렉트 박스
+// $('#langBtn').click(function(){
+//     url=$('#langList').val();
+//     window.open(url);
+// })
 
+// document.getElementById('langBtn').addEventListener('click', function() {
+//     var url = document.getElementById('langList').value;
+//     window.open(url);
+// });
+
+document.getElementById('langBtn').addEventListener('click',function(){
+    var url = document.getElementById('langList').value;
+    window.open(url)
+});
 //상단배너
 $('.group-tab button').click(function(){
 tabName=$(this).data('slide');
