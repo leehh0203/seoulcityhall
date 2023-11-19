@@ -10,7 +10,7 @@
 // });
 
 document.getElementById('langBtn').addEventListener('click',function(){
-    var url = document.getElementById('langList').value;
+    const url = document.getElementById('langList').value;
     window.open(url)
 });
 //상단배너
@@ -53,10 +53,11 @@ const mainSlide1 = new Swiper('#slide1 .swiper',{
     },
     autoplay: {
         delay: 1000,
-        disableOnInteraction: false,
+        disableOnInteraction: false, //false로 설정시 자동재생이 비활성화됨
     },
-    observer: true,
-    observeParents: true,
+    //display:none해결
+    observer: true,//swiper는 스타일을 변경하거나 하위 요소를 수정할 때마다 업데이트(초기화)됨
+    observeParents: true,//부모요소의 변화에 따라 업데이트됨
 })
         
 //상단 탭 슬라이드2
@@ -100,7 +101,7 @@ const bannerSlide = new Swiper('.banner-slide',{
 })
 
 //슬라이드 전체소스
-slideArr=[mainSlide1,mainSlide2,bannerSlide]
+slideArr=[mainSlide1,mainSlide2,bannerSlide] //각각 슬라이드를 배열로 만듬
 $('.swiper .btn-autoplay').click(function(){
     idx=$(this).data('slide');
     if ($(this).hasClass('on')) {
